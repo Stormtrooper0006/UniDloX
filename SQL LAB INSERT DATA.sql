@@ -1,0 +1,161 @@
+USE UniDloX
+
+INSERT INTO Payment_Type VALUES 
+('PA001', 'DANA'), 
+('PA002', 'OVO'),
+('PA003', 'Go-Pay'), 
+('PA004', 'Shopee-Pay'),
+('PA005', 'Cash'), 
+('PA006', 'Debit Card'),
+('PA007', 'Cash'), 
+('PA008', 'Credit Card'),
+('PA009', 'Cryptocurrency'),
+('PA010', 'Flazz')
+
+INSERT INTO Staff VALUES
+('SF001', 'Indah', '+628111408781', 'Jalan Delima', 18, 'Female', 4453935), 
+('SF002', 'Nur', '+628115009889', 'Jatiwaringin', 19, 'Female', 4453935),
+('SF003', 'Joseph', '+628118983881', 'Jalan Bekasi', 89, 'Male', 74453935), 
+('SF004', 'Kakyoin', '+628110412343', 'Jalan Morioh', 16, 'Male', 4453935),
+('SF005', 'Dio', '+628113266913', 'Jalan Britain', 121, 'Male', 69053935), 
+('SF006', 'Polnareff' , '+628113131722', 'Jalan Italia', 20, 'Male', 4453935),
+('SF007', 'Bayu', '+628113913497', 'Jalan Pelabu', 23, 'Male', 6753935), 
+('SF008', 'Giorno' , '+628114383574', 'Jalan Jalan', 26, 'Male', 7453935),
+('SF009', 'Jolyne', '+628116493355', 'Jalan Penjara', 27, 'Female', 7453935),
+('SF010', 'Rias' , '+628117177013', 'Jalan Periuk', 18, 'Female', 4453935)
+
+INSERT INTO Supplier VALUES
+('SU001', 'Gizella', '+628113753781', 'Jalan Wono'),
+('SU002', 'NabilaTifa', '+628119202490', 'Jalan Brigjen '),
+('SU003', 'MilesDavis', '+628114237372', 'Jalan Hayam'),
+('SU004', 'LawsonTa', '+628115758794', 'Jalan Wuruk'),
+('SU005', 'Zaydent', '+628113757316', 'Jalan Kepu'),
+('SU006', 'Willard', '+628114567350', 'Jalan Senen'),
+('SU007', 'Derrick', '+628110336962', 'Jalan Pancoran'),
+('SU008', 'Cathaly', '+628118419322', 'Jalan Mawar'),
+('SU009', 'Chelsea', '+628110432273', 'Jalan Subroto'),
+('SU010', 'Salmoneli', '+628112409708', 'Jalan Gatot')
+
+INSERT INTO Customer VALUES
+('CU001', 'Barney', '+628116878173', 'Jalan Kuala', 'Male', 'barney22@yahoo.com','2001-10-16'),
+('CU002', 'Arnas', '+628116090666', 'Jalan Tanah ', 'Male','araanas@yahoo.com','2000-06-13'),
+('CU003', 'Mateusz', '+628115563388', 'Jalan Merdeka', 'Male','mateuzssz@yahoo.com','1995-03-15'),
+('CU004', 'Inaayah', '+628114282151', 'Jalan Kupang', 'Female', 'inaaayah11@yahoo.com','1993-12-22'),
+('CU005', 'Alysia', '+628112337161', 'Jalan Raya', 'Female', 'alysian@yahoo.com','2002-04-06'),
+('CU006', 'Ema', '+628118099656', 'Jalan Parman', 'Female','ema@yahoo.com','2004-11-13'),
+('CU007', 'Nichols', '+628110058881', 'Jalan Pintu Air', 'Male','nicholssh@yahoo.com','1993-12-13'),
+('CU008', 'Stark', '+628116749946', 'Jalan Baru', 'Male','starkind@yahoo.com','2000-09-15'),
+('CU009', 'Alysia', '+628110063281', 'Jalan Labora', 'Male', 'canalysia@yahoo.com','1999-10-11'),
+('CU010', 'Hibba', '628115327758', 'Jalan Ciputra', 'Female', 'Hibbyhibba@yahoo.com','1995-04-24');
+
+INSERT INTO Cloth VALUES
+('CL001', 'cloth_Axe', 244, 150000),
+('CL002', 'cloth_Whale', 142, 420000),
+('CL003', 'cloth_Dolphin', 135, 200000),
+('CL004', 'cloth_Knife', 231, 50000),
+('CL005', 'cloth_Gun', 164, 500000),
+('CL006', 'cloth_Abstract', 75, 1500000),
+('CL007', 'cloth_Suit', 22, 600000),
+('CL008', 'cloth_Sleek', 15, 1100000),
+('CL009', 'cloth_Water', 19, 340000),
+('CL010', 'cloth_Shade', 134, 235000)
+
+INSERT INTO Material VALUES
+('MA001', 'SU001', 'Kapas', 200000),
+('MA002', 'SU002', 'Sutra', 820000),
+('MA003', 'SU003', 'Linen', 500000),
+('MA004', 'SU004', 'Wol', 450000),
+('MA005', 'SU005', 'Kulit', 700000),
+('MA006', 'SU006', 'Katun', 500000),
+('MA007', 'SU007', 'Satin', 600000),
+('MA008', 'SU008', 'Nylon', 110000),
+('MA009', 'SU009', 'Polyester', 120000),
+('MA010', 'SU010', 'Denim', 640000)
+
+INSERT INTO Purchase_Transaction VALUES
+('PU001', 'SF001', 'PA009', '2020-01-01'),
+('PU002', 'SF002', 'PA009', '2020-11-15'),
+('PU003', 'SF002', 'PA002', '2020-01-02'),
+('PU004', 'SF005', 'PA005', '2020-01-02'),
+('PU005', 'SF004', 'PA005', '2020-01-03'),
+('PU006', 'SF003', 'PA004', '2020-11-15'),
+('PU007', 'SF007', 'PA001', '2020-06-04'),
+('PU008', 'SF008', 'PA003', '2021-01-04'),
+('PU009', 'SF009', 'PA005', '2021-11-15'),
+('PU010', 'SF010', 'PA006', '2021-01-05'),
+('PU011', 'SF010', 'PA006', '2021-11-01'),
+('PU012', 'SF002', 'PA008', '2021-11-15'),
+('PU013', 'SF004', 'PA008', '2021-04-12'),
+('PU014', 'SF004', 'PA009', '2021-01-06'),
+('PU015', 'SF006', 'PA004', '2021-01-07')
+
+INSERT INTO Purchase_Detail VALUES
+('PU001', 'MA001', 5),
+('PU002', 'MA002', 5),
+('PU002', 'MA003', 8),
+('PU002', 'MA006', 10),
+('PU003', 'MA002', 15),
+('PU003', 'MA004', 25),
+('PU003', 'MA008', 25),
+('PU004', 'MA005', 24),
+('PU004', 'MA001', 30),
+('PU005', 'MA004', 11),
+('PU006', 'MA010', 18),
+('PU006', 'MA003', 17),
+('PU007', 'MA007', 10),
+('PU008', 'MA009', 18),
+('PU008', 'MA008', 40),
+('PU009', 'MA009', 8),
+('PU010', 'MA010', 19),
+('PU011', 'MA006', 26),
+('PU011', 'MA010', 27),
+('PU012', 'MA002', 40),
+('PU013', 'MA004', 32),
+('PU013', 'MA003', 14),
+('PU014', 'MA002', 34),
+('PU014', 'MA004', 12),
+('PU015', 'MA006', 24)
+
+INSERT INTO Sales_Transaction VALUES
+('SA001', 'SF001', 'CU001', '2019-05-1', 'PA001'),
+('SA002', 'SF001', 'CU001', '2019-06-6', 'PA001'),
+('SA003', 'SF002', 'CU002', '2019-06-4', 'PA003'),
+('SA004', 'SF002', 'CU002', '2019-08-12', 'PA001'),
+('SA005', 'SF003', 'CU003', '2019-08-22', 'PA005'),
+('SA006', 'SF003', 'CU003', '2019-01-14', 'PA001'),
+('SA007', 'SF004', 'CU004', '2019-02-18', 'PA007'),
+('SA008', 'SF004', 'CU004', '2020-04-25', 'PA001'),
+('SA009', 'SF005', 'CU005', '2020-06-24', 'PA010'),
+('SA010', 'SF006', 'CU006', '2020-07-3', 'PA001'),
+('SA011', 'SF007', 'CU007', '2020-09-4', 'PA002'),
+('SA012', 'SF008', 'CU008', '2021-11-8', 'PA001'),
+('SA013', 'SF009', 'CU009', '2021-12-8', 'PA006'),
+('SA014', 'SF010', 'CU010', '2021-05-7', 'PA007'),
+('SA015', 'SF010', 'CU010', '2021-03-9', 'PA001')
+
+INSERT Sales_Detail VALUES
+('SA001','CL001',3),
+('SA002','CL002',2),
+('SA003','CL005',4),
+('SA004','CL004',1),
+('SA005','CL006',5),
+('SA006','CL006',4),
+('SA007','CL007',7),
+('SA008','CL008',2),
+('SA009','CL009',1),
+('SA010','CL010',1),
+('SA011','CL003',3),
+('SA012','CL004',4),
+('SA013','CL006',2),
+('SA014','CL002',3),
+('SA015','CL003',1),
+('SA001','CL004',5),
+('SA002','CL005',2),
+('SA003','CL003',1),
+('SA004','CL001',1),
+('SA005','CL002',2),
+('SA006','CL004',2),
+('SA006','CL005',3),
+('SA007','CL007',1),
+('SA008','CL008',2),
+('SA009','CL009',3)
