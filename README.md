@@ -1,3 +1,2 @@
 # UniDloX
-UniDloX merupakan sebuah database yang dibuat untuk menangani proses transaksi pada perusahaan yang berfokus pada produksi dan distribusi pakaian.
-Database ini dirancang agar bisa menangani proses transaksi antara staff dengan supplier material bahan pakaian dan juga transaksi antara staff dengan customer.
+UniDloX is a database created to manage transaction processes within a company focused on the production and distribution of clothing. This database is designed to handle transactions between staff and material suppliers for clothing production, as well as transactions between staff and customers.
